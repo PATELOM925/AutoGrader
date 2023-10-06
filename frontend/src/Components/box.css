@@ -1,0 +1,30 @@
+.purple-box-container {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:65vw;
+    height:68vh;
+    /* width:1000px;
+    height:600px; */
+    padding:50px;
+    background-color: #000000;
+    opacity: 60%;
+    box-shadow:0 0 70px #000000;
+    border-radius: 40px;
+    margin-top: 3%;
+    
+}
+
+/* About_p css */
+.purple-box-container .abt_p_h1{
+    color: #ffffffd6;
+    margin-bottom: 20px;
+}
+
+.purple-box-container .abt_p_p{
+    color: #ffffffa5;
+    font-size: 25px;
+    text-align: left;
+    width: 100%;
+}

@@ -1,0 +1,97 @@
+/* User.css */
+
+.bg-element {
+  background-image: url('../Assets/Img/bg_img.jpeg');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  font-size: 20px;
+}
+
+.b-container {
+  position: absolute;
+  background-color: white;
+  width: 90%; /* Adjust the width to your preference */
+  max-width: 800px; /* Add a maximum width for larger screens */
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  animation: fadeIn 1s ease;
+  box-shadow: 0 30px 50px #000000;
+  display: flex;
+  flex-direction: column; /* Ensure elements stack vertically */
+  align-items: center; /* Center elements horizontally */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+h1 {
+  font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.t-container {
+  overflow-x: auto;
+  width: 100%; /* Ensure table width spans the container */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #3c0c65;
+  border-radius: 10px;
+  table-layout: fixed; /* Fix the table layout */
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+thead {
+  background-color: #3c0c65;
+  color: #fff;
+}
+
+th {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #222;
+}
+
+tr:hover {
+  background-color: #444;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .table-container {
+      width: 100%; /* Expand table to full width */
+  }
+  table {
+      font-size: 14px;
+  }
+}

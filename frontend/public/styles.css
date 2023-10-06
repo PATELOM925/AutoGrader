@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto';
+    overflow: hidden;
+}
+
+.bg {
+    background-image: url("../src/Assets/Img/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    width:100vw;
+    height: 100vh; */
+    top: -50;
+    left: -50;
+    width: calc(100vw + 100px);
+    height: calc(100vh + 100px);
+    z-index: -10;
+    filter:blur(70px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color:white;
+
+}

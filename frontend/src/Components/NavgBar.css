@@ -1,0 +1,272 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none; 
+}
+
+:root{
+    --bg-color: #222327;
+    --text-color: #fff; 
+}
+
+body {
+    min-height: 100vh; 
+
+} 
+
+header{
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 7%; 
+    transition: all .50s ease;
+}
+
+a.logo{
+    width: 27%;
+}
+
+.logo {
+    display: flex; 
+    align-items: center;
+} 
+
+.logo i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+#logo_img{
+    padding-top: 7%;
+    margin-bottom: 8%;
+}
+
+.logo span{
+    color: var(--text-color);
+}
+
+#logo_img{
+    width: 30%;
+}
+
+.navbar{
+    display: flex;
+
+    background: transparent;
+    border-radius: 50px;
+    height: 10px;
+}
+    
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: -25px 30px;
+    transition: all .50s ease;
+    text-decoration: none;
+
+    list-style: none; 
+    display: inline-block; 
+    color: #252222; 
+    cursor: pointer; 
+    position: relative; 
+    transition: color 0.5s;
+    z-index: 2;
+}
+
+.navbar a:hover{
+    color:#fff;
+}
+
+.navbar a::after{
+    content: ''; 
+    background:#00000087;
+    width: 120%;
+    height: 100%; 
+    border-radius: 30px;
+    position: absolute;
+    top: 100%; 
+    left: -10%;
+    right: 0%; 
+    transform: translate (-50%, -50%); 
+    z-index: -1;
+    transition: top 0.2s, opacity 0.5s;
+    opacity: 0;
+}
+
+.navbar a:hover::after{
+    top:0%;
+    opacity: 1;
+}
+
+li{
+    color: transparent;
+}
+
+.main{
+    display: flex; 
+    align-items: center;
+
+    background: #0000001d;
+    border-radius: 20px;
+    height: 5vh;
+    width: 180px;
+    color: #292727;
+}
+    
+
+.user{
+    display: flex; 
+    align-items: center;
+    color: #292727;
+    text-decoration: none;
+
+}
+
+.user i{
+    color: #2d2828;
+    font-size: 27px;
+    margin-right: 7px;
+    text-decoration: none;
+
+}
+
+.user:hover{
+    color: white;
+}
+
+.main:hover{
+    background: #00000087;
+    color: white;
+}
+
+
+
+#menu-icon{
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+@media (max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px
+    }
+
+    .navbar{
+        padding-bottom: 20px;
+    }
+    .main{
+        height: 6vh;
+    }
+   
+    .user{
+        font-size: 15px;
+    }
+
+    #logo_img{
+        width: 30%;
+    }
+}
+
+@media (max-width: 1090px)
+{
+    #menu-icon{
+        display: block;
+        
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 35vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .navbar a{  
+        display: block;   
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    } 
+    .navbar a:hover{
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+
+    .navbar.open{
+        right: 2%;
+        background-color: #0000007b;
+    }
+
+    .navbar.open a{
+        color: #ffffff85;
+    }
+
+    .navbar.open a:hover{
+        color: white;
+    }
+
+    .main{
+        width: 120px;
+        height: 40px;
+    }
+
+    .user i{
+        font-size: 15px;
+        width: 10px;
+    }
+
+    .user{
+        font-size: 12px;
+        width: 100px;
+        display: flex; 
+        align-items: center;
+    }
+
+    #logo_img{
+        width: 30%;
+    }
+
+}
+
+
+header.scrolled {
+    padding: 0px 0;
+    background: linear-gradient(135deg, #4b4b4b6e, #cfcdcd88, #3a3a3aad);
+    margin-top: 10px;
+    margin-left: 20%;
+    border-radius: 20px;
+    opacity: 90%;
+  }
+
+.cont{
+    background: #0000001d;
+    border-radius: 50px;    
+    padding: 10px;   
+    box-shadow: 0 25px 20px-20px rgba(0, 0, 0, 0.4);
+}
+

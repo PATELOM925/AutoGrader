@@ -1,0 +1,121 @@
+.upload-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:700px;
+    height:80vh;
+    padding:50px;
+    background-color: #000000d2;
+    opacity: 80%;
+    box-shadow:0 0 70px #000000;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+
+.content1 , .content2 {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.drop-area {
+    border: 2px dashed #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.file-input {
+    display: none;
+}
+
+p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.selected-image {
+    margin-top: 10px;
+    height: 20vh;
+    width: 20wh;
+}
+
+.edit-btn {
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    bottom: 10px;
+    position: absolute;
+}
+
+.edit-btn:hover {
+    background-color: #ffffff6d;
+    color: black;
+}
+
+.edit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+@media (max-width: 1090px){
+    .upload-container {
+        height: 500px;
+        width: 65vw;
+    }
+
+    .selected-image {
+        margin-top: 10px;
+        height: 10vh;
+        width: 10wh;
+    }
+
+    .edit-btn {
+        font-size: 13px;
+        padding: 8px 15px;   
+        bottom: 10px;
+        position: absolute;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .drop-area {
+        border: 1px dashed #ffffff;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    
+    .content1 , .content2 {
+        padding: 10px;
+        margin: 10px;
+    }
+
+}
