@@ -1,1 +1,1 @@
-# Automatic-Paper-Checker
+# AutoGrader
